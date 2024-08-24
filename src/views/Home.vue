@@ -581,8 +581,8 @@ export default {
           });
         }
         //console.log(json_up.monitors[index]);
-        if(json_up.monitors[index].type == 1||json_up.monitors[index].type == 4){
-          //HTTP与Port检测归位
+        if(json_up.monitors[index].type == 1){
+          //HTTP检测归位
           this.website_table.push(json_up.monitors[index])
         }else if(json_up.monitors[index].type == 3){
           //Ping检测归位
